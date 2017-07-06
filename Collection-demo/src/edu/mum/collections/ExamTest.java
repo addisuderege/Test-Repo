@@ -1,18 +1,24 @@
 package edu.mum.collections;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class ExamTest {
+	static List<Person> persons=new ArrayList<Person>();
 
 	public static void main(String[] args) {
 		
- List<Person> persons=Arrays.asList(
+  persons=Arrays.asList(
 		 new Person(1,"Berhe",25),
 		 new Person(2,"Hagos",30),
 		 new Person(3,"Kidane",23),
 		 new Person(4,"Berhane",26)
 		 );
  
+            print(persons);
+           // persons.add(new Person(6,"Mebre",40));
+            
+           // AddPerson(new Person(5,"Tek",30));
             print(persons);
 	}
 
@@ -21,6 +27,10 @@ public class ExamTest {
 		
 		
 	}	
+	private static void AddPerson(Person p){
+		persons.add(p);
+		
+	}
 	
 	
 
