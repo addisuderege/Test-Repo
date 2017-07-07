@@ -8,8 +8,7 @@ public class InheritanceTest {
 		
 		Person1 p1=new Person1();
 		Person1 p2=new Manager();
-		
-		//System.out.println(p1.x); 10
+				
 		
 		try{
 		p1.msg();
